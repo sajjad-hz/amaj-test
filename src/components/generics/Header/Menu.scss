@@ -18,10 +18,11 @@
     a {
       color: map-get($colors, des);
       font-size: map-get($font-size, menuFont);
+      font-weight: 300;
 
       &.active {
         color: map-get($colors, light);
-        font-size: map-get($font-size, menuFont);
+        font-weight: normal;
 
         .item-line {
           opacity: 1;

@@ -1,13 +1,14 @@
 import Button from "../../../utils/Button";
 import homePic from "../../assets/pictures/home-pic.png";
 import CalenderIcon from '../../assets/icons/Calendar.png'
+import './index.scss'
 
 const Home = () => {
   return (
-    <section>
+    <section className='home-section'>
       <div className="home">
         <div className="home-top">
-          <div className="home-top_left">
+          <div className="home-top__left">
             <h2>
               NFTHistory<span>.io</span>
             </h2>
