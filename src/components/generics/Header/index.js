@@ -1,6 +1,6 @@
-import React from "react";
 import Logo from "./Logo";
 import Menu from "./Menu";
+import Button from '../../../utils/Button'
 import SearchIcon from "../../assets/icons/Search.png";
 import QuestionIcon from "../../assets/icons/question.png";
 import NotiIcon from "../../assets/icons/Notification.png";
@@ -17,6 +17,7 @@ const Header = () => {
         <img src={NotiIcon} alt="noti icon" />
         <img src={ProfileIcon} alt="profile icon" />
       </div>
+      <Button className='btn-med' >GO TO MARKETPLACE</Button>
     </header>
   );
 };
