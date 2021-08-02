@@ -5,8 +5,9 @@ const Logo = () => {
     return (
         <div className='logo'>
             <div className='logo-pic'>
-                
+                <img src={logoPic} alt="logo pic" />
             </div>
+            <h2 className='logo-text'>NFT HISTORY</h2>
         </div>
     )
 }
