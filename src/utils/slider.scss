@@ -11,13 +11,12 @@
   height: 480px;
 
   .slick-track {
-    top: 35px;
+    top: 140px;
   }
 
   .slick-list {
     height: 480px !important;
   }
-
 
   .slider-scroll {
     position: relative;
@@ -33,7 +32,11 @@
       right: 0px;
       width: 70px;
       height: 1px;
-      background: map-get($colors, greycolor);
+      background: linear-gradient(
+        90deg,
+        map-get($colors, greycolor) 50%,
+        map-get($colors, bg) 110%
+      );
     }
 
     .slider-title {
@@ -42,8 +45,8 @@
       width: 115px;
       border: 1px solid map-get($colors, greycolor);
       padding: 8px;
-      border-radius: 6px;
-      color: map-get($colors, greycolor);;
+      border-radius: 9px;
+      color: map-get($colors, greycolor);
 
       &::after {
         content: "";
@@ -53,12 +56,10 @@
         width: 10px;
         height: 10px;
         color: map-get($colors, greycolor);
-
+        border: 1px solid map-get($colors, greycolor);
         border-radius: 50%;
-        background: map-get($colors, greycolor);
+        background: map-get($colors, bg);
       }
-
-      
     }
   }
   .slick-current {
@@ -136,6 +137,7 @@
 
   .slick-slide {
     width: 100% !important;
+
 
     & > div > div {
       display: flex !important;

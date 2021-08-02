@@ -1,15 +1,14 @@
 import React from "react";
 import Button from "../utils/Button";
 import exportIcon from "../components/assets/icons/export.png";
-import Image from "../components/assets/pictures/1.jpg";
 import "./SliderCard.scss";
 
-const SliderCard = () => {
+const SliderCard = (props) => {
   return (
     <div className="slider-card">
       <div
         className="slider-card__left"
-        style={{ backgroundImage: `url(${Image})` }}
+        style={{ backgroundImage: `url(${props.img})` }}
       ></div>
       <div className="slider-right">
         <div className="card-header">
@@ -18,7 +17,7 @@ const SliderCard = () => {
         </div>
         <div className="card-body">
           <div className="card-body__title">
-            <span>First man</span>
+            <span>{props.title}</span>
             <span>Histoy</span>
           </div>
           <div className="card-body__text">
@@ -36,7 +35,9 @@ const SliderCard = () => {
           </div>
           <div className="card-btns">
             <Button size="btn-large">Make an Offer</Button>
-            <img src={exportIcon} alt="" />
+            <div className="card-btns__img">
+              <img src={exportIcon} alt="" />
+            </div>
           </div>
         </div>
       </div>

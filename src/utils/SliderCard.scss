@@ -8,13 +8,25 @@
   display: flex;
   flex-wrap: wrap;
 
+  &::after{
+    content: ' ';
+    position: absolute;
+    left: 0px;
+    top: 28%;
+    width: 3px;
+    height: 208px;
+    background: map-get($colors, primary);
+  }
+
   &__left {
-    background-size: contain;
+
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 364px;
     height: 391px !important;
     margin: 46px 28px 46px 46px;
+    border-radius: 18px;
   }
 
   .slider-right {
@@ -47,8 +59,8 @@
       margin: 16px 0 14px 0;
       font-size: map-get($font-size, body2);
       font-weight: 300;
-      line-height: 1.8;
       color: map-get($colors, light);
+      text-align: justify;
 
       &__title {
         font: 500;
@@ -60,6 +72,9 @@
         span:nth-child(2) {
           color: map-get($colors, primary);
           font-weight: 500;
+          background-color: #48465C;
+          padding: 4px 12px;
+          border-radius: 10px;
         }
       }
 
@@ -68,6 +83,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        font-weight: 500;
       }
     }
 
@@ -76,9 +92,19 @@
       justify-content: space-between;
       align-items: center;
 
+      &__img {
+          width: 56px;
+          height: 56px;
+          border: solid 1px map-get($colors, des);
+          border-radius: 12px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
       img {
-        width: 56px;
-        height: 56px;
+        width: 25px;
+        height: 25px;
       }
     }
   }
