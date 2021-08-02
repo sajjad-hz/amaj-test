@@ -1,5 +1,6 @@
 import React from 'react'
 import logoPic from '../../assets/icons/logo.png'
+import './Logo.scss'
 
 const Logo = () => {
     return (

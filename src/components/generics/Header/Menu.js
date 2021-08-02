@@ -1,20 +1,19 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
+import React from "react";
+import MenuLink from "./MenuLink";
+import "./Menu.scss";
 
 const Menu = () => {
-    return (
-        <nav>
-            <ul className="menu-items">
-               <li className="menu-item"><Link to='/'>Home</Link></li>
-               <li className="menu-item"><Link to='/market'>Market Place</Link></li>
-               <li className="menu-item"><Link to='/wallet'>Wallet Balance</Link></li>
-               <li className="menu-item"><Link to='/drops'>Drops</Link></li>
-               <li className="menu-item"><Link to='/account'>Accounts</Link></li>
+  return (
+    <nav className="menu">
+      <ul className="menu-items">
+        <MenuLink link={'/'}>Home</MenuLink>
+        <MenuLink link={'/market'}>Market PLace</MenuLink>
+        <MenuLink link={'/wallet'}>Wallet Balance</MenuLink>
+        <MenuLink link={'/drops'}>Drops</MenuLink>
+        <MenuLink link={'/account'}>Account</MenuLink>
+      </ul>
+    </nav>
+  );
+};
 
-            </ul>
-        </nav>
-    )
-}
-
-export default Menu
+export default Menu;

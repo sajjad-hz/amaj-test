@@ -1,0 +1,31 @@
+@import '../../../../sassStyles/variables';
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &-main {
+
+        width: 90%;
+        height: 100%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-right{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-options{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 220px;
+        height: 100px;
+    }
+}
