@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../utils/Button";
-import exportIcon from '../components/assets/icons/Export.png'
+import exportIcon from "../components/assets/icons/export.png";
 import Image from "../components/assets/pictures/1.jpg";
 import "./SliderCard.scss";
 
