@@ -1,0 +1,20 @@
+@import '../../sassStyles/typography';
+@import '../../sassStyles/variables';
+
+.btn {
+    background-color: map-get($colors, primary );
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    color: map-get($colors, light );
+    font-size: map-get($font-size , btn );
+
+    &.btn-med{
+        padding: 19px 24px;
+    }
+
+    &.btn-large{
+        width: 348px;
+        height: 56px;
+    }
+}

@@ -1,7 +1,8 @@
+import './Button.scss'
 
 const Button = (props) => {
     return (
-        <button {...props}></button>
+        <button className={`btn ${props.size}`} {...props}>{}</button>
     )
 }
 

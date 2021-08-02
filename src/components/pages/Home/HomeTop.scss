@@ -1,0 +1,44 @@
+@import "../../../../sassStyles/typography";
+@import "../../../../sassStyles/variables";
+
+  .home-top {
+    width: 100%;
+    min-height: 306px;
+    margin-top: 65px;
+    background-color: map-get($colors, secondary);
+    border-radius: 18px;
+
+    display: flex;
+
+    &__left {
+      margin: 0 32px 0 32px;
+      text-align: start;
+      letter-spacing: 1px;
+
+      h2 {
+        color: map-get($colors, light);
+        margin: 32px 0 16px 0;
+        text-align: start;
+
+        span {
+          color: map-get($colors, des);
+        }
+      }
+
+      p {
+        font-size: map-get($font-size, body1);
+        font-weight: 300;
+        text-align: start;
+        color: map-get($colors, light);
+      }
+
+      .btn {
+        margin: 26px 0 32px 0;
+      }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+  }
