@@ -1,4 +1,5 @@
-import React from "react";
+import Button from '../../../utils/Button';
+import homePic from '../../assets/pictures/home-pic.png'
 
 const Home = () => {
   return (
@@ -16,8 +17,12 @@ const Home = () => {
               history from discovering America through your birthday to creating
               Bitcoin.
             </p>
+      <Button className='btn-med' >GO TO MARKETPLACE</Button>
+
           </div>
-          <div className="home-top_right"></div>
+          <div className="home-top_right">
+            <img src={homePic} alt="" />
+          </div>
         </div>
       </div>
     </section>
