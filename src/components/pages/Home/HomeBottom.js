@@ -1,3 +1,4 @@
+import Carousel from '../../../utils/slider';
 import CalenderIcon from "../../assets/icons/Calendar.png";
 import "./HomeBottom.scss";
 
@@ -16,6 +17,7 @@ const HomeBottom = () => {
           <img src={CalenderIcon} alt="cal icon" />
         </div>
       </div>
+      <Carousel></Carousel>
     </div>
   );
 };
