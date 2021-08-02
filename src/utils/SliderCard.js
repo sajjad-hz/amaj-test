@@ -35,7 +35,7 @@ const SliderCard = () => {
             <span>299$</span>
           </div>
           <div className="card-btns">
-            <Button className="large-btn">Make an Offer</Button>
+            <Button size="btn-large">Make an Offer</Button>
             <img src={exportIcon} alt="" />
           </div>
         </div>
